@@ -12,7 +12,7 @@ pipeline {
             echo 'I will always say Hello again!'
         }
         failure {
-            mail to: 'manasi.panda@mindtree.com', subject: 'The Pipeline failed :('
+            emailext body: 'Failure Email post step test', subject: 'Pipeline Failed'
         }
     }
 }
